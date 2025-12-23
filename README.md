@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stella-Dev 랜딩 페이지
 
-## Getting Started
+**기술로 문제를 해결하다**
 
-First, run the development server:
+스텔라 데브의 공식 랜딩 페이지입니다. 회사의 서비스와 가치를 소개하는 웹사이트입니다.
+개발 회사이기 때문에 어두운 배경으로 심플하지만 세련되고 뭔가 있어보이게 만들어야합니다.
+
+## 서비스
+
+- **Slur**: 클래식 음악가를 위한 통합 플랫폼 - https://slur.stella-dev.org/
+- **아보행**: AI 기반 감성 일기 앱 - https://abohaeng.stella-dev.org/
+- **Day 100**: 100일 챌린지 습관 형성 앱 - https://day100.stella-dev.org/
+
+## 기술 스택
+
+- Next.js 16
+- TypeScript
+- Tailwind CSS
+- Docker
+
+## 프로덕션 빌드
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Docker로 실행
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 이미지 빌드
+docker build -t stella-dev-landing .
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 컨테이너 실행
+docker run -p 3000:3000 stella-dev-landing
 
-## Learn More
+# 또는 docker-compose 사용
+docker-compose up --build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 연락처
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+문의사항이 있으시면 support@stella-dev.org로 연락주세요.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 스텔라 데브. All rights reserved.

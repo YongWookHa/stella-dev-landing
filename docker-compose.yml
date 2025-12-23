@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  stella-dev-landing:
+    build: .
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    container_name: stella-dev-landing
+    networks:
+      - infrastructure
+
+networks:
+  infrastructure:
+    external: true
+    name: infrastructure
