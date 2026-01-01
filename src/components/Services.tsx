@@ -30,7 +30,7 @@ function ServiceCard({ title, description, url, features, logo }: ServiceCardPro
           </div>
           <h3 className="text-2xl font-bold text-white">{title}</h3>
         </div>
-        <p className="text-gray-400 mb-6">{description}</p>
+        <p className="text-gray-400 mb-6 whitespace-pre-line">{description}</p>
 
         <ul className="space-y-3 mb-8">
           {features.map((feature, index) => (
@@ -108,7 +108,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
             {t('title')}
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light whitespace-pre-line">
             {t('description')}
           </p>
         </div>

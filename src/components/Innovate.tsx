@@ -14,7 +14,7 @@ export default function Innovate() {
           <p className="text-xl text-gray-400 mb-8 font-light">
             {t('subtitle')}
           </p>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed whitespace-pre-line">
             {t('description')}
           </p>
         </div>

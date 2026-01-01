@@ -84,12 +84,16 @@
   "Footer": {
     "companyName": "StellaDev",
     "mission": "Our mission is to solve problems through technology.\nBuilding innovative solutions for a better world.",
-    "email": "Email:",
+    "email": "Inquiry:",
     "services": "Services",
     "slurFooter": "Slur - Classical Music Platform",
     "abohaengFooter": "Abohaeng - AI Emotional Diary",
     "day100Footer": "Day100 - Micro Challenges",
-    "copyright": "All rights reserved."
+    "copyright": "All rights reserved.",
+    "legalName": "StellaDev",
+    "ceo": "CEO: Ha Yong Wook",
+    "businessRegistration": "Business Registration: 123-45-67890",
+    "address": "Address: 8th Floor, 8 Seojeon-ro, Busanjin-gu, Busan, South Korea"
   },
   "Contact": {
     "title": "Contact Us",
@@ -97,10 +101,6 @@
     "info": {
       "title": "Contact Information",
       "email": "Email",
-      "address": "Address",
-      "addressValue": "8th Floor, 8 Seojeon-ro, Busanjin-gu, Busan, South Korea",
-      "ceo": "CEO",
-      "ceoValue": "Ha Yong Wook",
       "responseTime": "Response Time",
       "responseTimeValue": "Within 24 hours",
       "consultation": "Consultation",
