@@ -9,7 +9,7 @@
 
 - **Slur**: 클래식 음악가를 위한 통합 플랫폼 - https://slur.stella-dev.org/
 - **아보행**: AI 기반 감성 일기 앱 - https://abohaeng.stella-dev.org/
-- **Day 100**: 100일 챌린지 습관 형성 앱 - https://day100.stella-dev.org/
+- **Day100**: 100일 챌린지 습관 형성 앱 - https://day100.stella-dev.org/
 
 ## 기술 스택
 

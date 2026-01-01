@@ -1,0 +1,119 @@
+{
+  "Header": {
+    "think": "Think",
+    "build": "Build",
+    "innovate": "Innovate",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Think, Build, Innovate",
+    "subtitle": "Technology Solving Problems",
+    "description": "We are a passionate and efficient team of experts. We improve client software or proactively find and solve problems to build optimal solutions.",
+    "exploreServices": "Explore Services",
+    "contactUs": "Contact Us"
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "Discover our ecosystem of applications designed to enhance your lifestyle and career.",
+    "visitWebsite": "Visit Website",
+    "slur": {
+      "title": "Slur",
+      "description": "The all-in-one platform for classical musicians.",
+      "features": [
+        "Real-time audition aggregation",
+        "Smart musician matching",
+        "One-touch application system",
+        "Automated career portfolio"
+      ]
+    },
+    "abohaeng": {
+      "title": "Abohaeng",
+      "description": "AI-powered emotional diary for your daily life.",
+      "features": [
+        "Multi-modal diary (Text, Photo, Voice)",
+        "Empathetic AI feedback",
+        "Self-reflection analytics",
+        "Discovering ordinary happiness"
+      ]
+    },
+    "day100": {
+      "title": "Day100",
+      "description": "Energize your daily life through micro-challenges and small achievements.",
+      "features": [
+        "AI-personalized micro-challenges",
+        "Achievement celebration system",
+        "Daily vitality boosters",
+        "Small wins tracking"
+      ]
+    }
+  },
+  "Think": {
+    "title": "Think",
+    "subtitle": "Creative Thinking and Strategic Analysis",
+    "description": "The first step in solving complex problems is deep thinking. We precisely understand client requirements and design optimal solutions through innovative approaches.",
+    "features": [
+      "Problem analysis and requirement definition",
+      "Creative solution design",
+      "Strategic approach development",
+      "Risk analysis and contingency planning"
+    ]
+  },
+  "Build": {
+    "title": "Build",
+    "subtitle": "Efficient Development and Implementation",
+    "description": "This is the implementation phase where we bring designed solutions to reality. We develop high-quality software that ensures performance and stability using the latest technology stack.",
+    "features": [
+      "Modern technology stack utilization",
+      "Quality and performance optimization",
+      "Scalable architecture",
+      "Thorough testing and validation"
+    ]
+  },
+  "Innovate": {
+    "title": "Innovate",
+    "subtitle": "Continuous Improvement and Innovation",
+    "description": "Beyond completed solutions, we pursue continuous innovation. We adapt to changing environments and introduce new technologies to create better value.",
+    "features": [
+      "Continuous improvement and updates",
+      "Future-oriented technology adoption",
+      "User experience optimization",
+      "Business value maximization"
+    ]
+  },
+  "Footer": {
+    "companyName": "StellaDev",
+    "mission": "Our mission is to solve problems through technology.\nBuilding innovative solutions for a better world.",
+    "email": "Email:",
+    "services": "Services",
+    "slurFooter": "Slur - Classical Music Platform",
+    "abohaengFooter": "Abohaeng - AI Emotional Diary",
+    "day100Footer": "Day100 - Micro Challenges",
+    "copyright": "All rights reserved."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Whether you want to discuss a project or have any questions, feel free to reach out anytime. Let's create the best solution together.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "address": "Address",
+      "addressValue": "8th Floor, 8 Seojeon-ro, Busanjin-gu, Busan, South Korea",
+      "ceo": "CEO",
+      "ceoValue": "Ha Yong Wook",
+      "responseTime": "Response Time",
+      "responseTimeValue": "Within 24 hours",
+      "consultation": "Consultation",
+      "consultationValue": "Free initial consultation"
+    },
+    "emailCard": {
+      "title": "Send us an Email",
+      "description": "We'd love to hear from you. Click the button below to send us a message directly.",
+      "button": "Contact Support"
+    }
+  },
+  "LanguageSelector": {
+    "english": "English",
+    "korean": "한국어"
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface ServiceCardProps {
   title: string;
@@ -10,17 +11,19 @@ interface ServiceCardProps {
 }
 
 function ServiceCard({ title, description, url, features, logo }: ServiceCardProps) {
+  const t = useTranslations('Services');
+
   return (
-    <div className="group relative bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+    <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-white/30 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20 hover:scale-[1.02]">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
       <div className="relative z-10">
         <div className="flex items-center mb-6">
           <div className="w-12 h-12 mr-4 flex-shrink-0">
-            <Image 
-              src={logo} 
-              alt={`${title} logo`} 
-              width={48} 
+            <Image
+              src={logo}
+              alt={`${title} logo`}
+              width={48}
               height={48}
               className="rounded-lg object-contain bg-white p-1"
             />
@@ -46,7 +49,7 @@ function ServiceCard({ title, description, url, features, logo }: ServiceCardPro
           rel="noopener noreferrer"
           className="inline-flex items-center text-white font-semibold group-hover:text-blue-400 transition-colors"
         >
-          Visit Website
+          {t('visitWebsite')}
           <svg className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -57,54 +60,56 @@ function ServiceCard({ title, description, url, features, logo }: ServiceCardPro
 }
 
 export default function Services() {
+  const t = useTranslations('Services');
+
   const services = [
     {
-      title: "Slur",
-      description: "The all-in-one platform for classical musicians.",
+      title: t('slur.title'),
+      description: t('slur.description'),
       url: "https://slur.stella-dev.org/",
       logo: "/assets/slur-logo.png",
       features: [
-        "Real-time audition aggregation",
-        "Smart musician matching",
-        "One-touch application system",
-        "Automated career portfolio"
+        t('slur.features.0'),
+        t('slur.features.1'),
+        t('slur.features.2'),
+        t('slur.features.3')
       ]
     },
     {
-      title: "Abohaeng",
-      description: "AI-powered emotional diary for your daily life.",
+      title: t('abohaeng.title'),
+      description: t('abohaeng.description'),
       url: "https://abohaeng.stella-dev.org/",
       logo: "/assets/abohaeng-logo.png",
       features: [
-        "Multi-modal diary (Text, Photo, Voice)",
-        "Empathetic AI feedback",
-        "Self-reflection analytics",
-        "Discovering ordinary happiness"
+        t('abohaeng.features.0'),
+        t('abohaeng.features.1'),
+        t('abohaeng.features.2'),
+        t('abohaeng.features.3')
       ]
     },
     {
-      title: "Day 100",
-      description: "Build lasting habits with a 100-day challenge.",
+      title: t('day100.title'),
+      description: t('day100.description'),
       url: "https://day100.stella-dev.org/",
       logo: "/assets/day100-logo.png",
       features: [
-        "AI-personalized challenges",
-        "Growth tracking dashboard",
-        "Community motivation",
-        "Milestone rewards system"
+        t('day100.features.0'),
+        t('day100.features.1'),
+        t('day100.features.2'),
+        t('day100.features.3')
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-24 bg-black relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Our Services
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light">
-            Discover our ecosystem of applications designed to enhance your lifestyle and career.
+            {t('description')}
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
