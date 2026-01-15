@@ -19,7 +19,7 @@ export default function Think() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {(t.raw('features') as string[]).map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center p-6 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300">
               <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mb-4">

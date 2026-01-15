@@ -13,10 +13,37 @@ const nanumGothicCoding = Nanum_Gothic_Coding({
   weight: ["400", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Stella Dev",
-  description: "Stella Dev is a technology company that solves problems through innovative solutions. The project serves as the primary web presence showcasing the company's services, expertise, and contact information.",
+const ogContent = {
+  ko: {
+    title: "스텔라 데브",
+    description: "스텔라 데브는 혁신적인 솔루션으로 문제를 해결하는 기술 회사입니다.",
+  },
+  en: {
+    title: "Stella Dev",
+    description: "Stella Dev is a technology company that solves problems through innovative solutions.",
+  },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const content = ogContent[locale as keyof typeof ogContent] || ogContent.en;
+
+  return {
+    metadataBase: new URL('https://stella-dev.org'),
+    title: content.title,
+    description: content.description,
+    openGraph: {
+      title: content.title,
+      description: content.description,
+      images: ['/assets/stella-dev-logo.png'],
+      locale: locale === 'ko' ? 'ko_KR' : 'en_US',
+    },
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
